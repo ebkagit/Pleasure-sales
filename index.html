@@ -25,10 +25,10 @@
       overflow-x: hidden;
     }
 
-    /* â”€â”€ HERO â”€â”€ */
+    /* ── HERO ── */
     .hero {
       background: linear-gradient(135deg, var(--deep) 0%, var(--magenta) 60%, #c2185b 100%);
-      padding: 18px 20px 0;
+      padding: 36px 20px 0;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -41,38 +41,33 @@
       background: radial-gradient(ellipse at 70% 30%, rgba(255,255,255,0.07) 0%, transparent 60%);
     }
 
-    .logo-wrap img {
-      width: 90px;
-      margin-bottom: 14px;
-      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
-    }
-
     .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(1.8rem, 6vw, 3rem);
+      font-size: clamp(2rem, 6vw, 3.2rem);
       font-weight: 900;
       color: var(--white);
       line-height: 1.15;
       letter-spacing: -0.5px;
       text-shadow: 0 2px 20px rgba(0,0,0,0.25);
+      margin-bottom: 10px;
     }
 
-    .hero h1 span {
-      color: var(--gold);
-    }
+    .hero h1 span { color: var(--gold); }
 
     .hero p.tagline {
       color: var(--blush);
       font-size: 1rem;
-      margin: 10px auto 22px;
+      margin: 0 auto 26px;
       max-width: 320px;
       font-weight: 300;
-      letter-spacing: 0.3px;
+      line-height: 1.6;
     }
 
-    /* â”€â”€ BUTTONS â”€â”€ */
+    /* ── BUTTONS ── */
     .btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       padding: 16px 38px;
       border-radius: 50px;
       font-family: 'DM Sans', sans-serif;
@@ -84,13 +79,13 @@
       letter-spacing: 0.4px;
     }
 
-    .btn-primary {
+    .btn-gold {
       background: var(--gold);
       color: var(--deep);
       box-shadow: 0 6px 28px rgba(240,192,64,0.45);
     }
 
-    .btn-primary:hover {
+    .btn-gold:hover {
       transform: translateY(-3px);
       box-shadow: 0 10px 36px rgba(240,192,64,0.55);
     }
@@ -99,7 +94,6 @@
       background: transparent;
       color: var(--white);
       border: 2px solid var(--white);
-      box-shadow: 0 4px 18px rgba(0,0,0,0.15);
     }
 
     .btn-outline:hover {
@@ -107,10 +101,31 @@
       transform: translateY(-2px);
     }
 
-    /* â”€â”€ PRODUCT IMAGE â”€â”€ */
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.4);
+    }
+
+    .btn-whatsapp:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 32px rgba(37,211,102,0.5);
+    }
+
+    .btn-email {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+
+    .btn-email:hover {
+      background: rgba(255,255,255,0.22);
+      transform: translateY(-2px);
+    }
+
+    /* ── PRODUCT IMAGE ── */
     .product-img-wrap {
-      margin-top: 28px;
-      position: relative;
+      margin-top: 30px;
     }
 
     .product-img-wrap img {
@@ -122,10 +137,10 @@
       box-shadow: 0 -8px 40px rgba(155,28,110,0.35);
     }
 
-    /* â”€â”€ BENEFITS SECTION â”€â”€ */
+    /* ── BENEFITS SECTION ── */
     .benefits {
       background: var(--white);
-      padding: 48px 24px 36px;
+      padding: 52px 24px 40px;
       text-align: center;
     }
 
@@ -165,10 +180,7 @@
       box-shadow: 0 8px 28px rgba(155,28,110,0.12);
     }
 
-    .card .icon {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
+    .card .icon { font-size: 2rem; margin-bottom: 10px; }
 
     .card h3 {
       font-family: 'Playfair Display', serif;
@@ -183,17 +195,17 @@
       line-height: 1.55;
     }
 
-    /* â”€â”€ CALLOUT STRIP â”€â”€ */
+    /* ── CALLOUT ── */
     .callout {
       background: linear-gradient(100deg, var(--deep), var(--magenta));
       color: var(--white);
-      padding: 32px 24px;
+      padding: 40px 24px;
       text-align: center;
     }
 
     .callout h3 {
       font-family: 'Playfair Display', serif;
-      font-size: 1.35rem;
+      font-size: 1.4rem;
       margin-bottom: 10px;
     }
 
@@ -201,23 +213,29 @@
       font-size: 0.9rem;
       color: var(--blush);
       max-width: 340px;
-      margin: 0 auto 24px;
+      margin: 0 auto 28px;
       line-height: 1.6;
     }
 
-    /* â”€â”€ FOOTER â”€â”€ */
+    .contact-btns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    /* ── FOOTER ── */
     footer {
       background: var(--text);
       color: #c9a0b8;
       text-align: center;
-      padding: 20px 16px;
-      font-size: 0.8rem;
+      padding: 24px 16px;
+      font-size: 0.82rem;
+      line-height: 1.8;
     }
 
-    footer a {
-      color: var(--blush);
-      text-decoration: none;
-    }
+    footer a { color: var(--blush); text-decoration: none; }
 
     @media (max-width: 380px) {
       .cards { grid-template-columns: 1fr; }
@@ -226,75 +244,70 @@
 </head>
 <body>
 
-  <!-- â•â• HERO TOP â•â• -->
+  <!-- ══ HERO ══ -->
   <section class="hero">
-    <div class="logo-wrap">
-      <img src="My logo.png" alt="Pleasure Store Logo">
-    </div>
     <h1>Your Pleasure,<br><span>Safely Delivered.</span></h1>
     <p class="tagline">Premium intimate products for confident, protected, and fulfilling moments.</p>
-    <a class="btn btn-primary" href="https://paystack.shop/pleasure-store">ðŸ›’ Shop Now</a>
+    <a class="btn btn-gold" href="https://paystack.shop/pleasure-store">Shop Now</a>
 
     <div class="product-img-wrap">
-      <img src="1001246879.jpg" alt="Durex Ribbed & Dotted Condoms for Extra Stimulation">
+      <img src="1001246879.jpg" alt="Durex Ribbed and Dotted Condoms for Extra Stimulation">
     </div>
   </section>
 
-  <!-- â•â• BENEFITS â•â• -->
+  <!-- ══ BENEFITS ══ -->
   <section class="benefits">
     <h2>The Power of Safe Intimacy</h2>
     <p class="intro">
-      Choosing protection isn't just smart â€” it's an act of love, confidence, and respect for yourself and your partner.
+      Choosing protection isn't just smart — it's an act of love, confidence, and respect for yourself and your partner.
     </p>
 
     <div class="cards">
       <div class="card">
-        <div class="icon">ðŸ›¡ï¸</div>
+        <div class="icon">🛡️</div>
         <h3>STI Protection</h3>
         <p>Quality condoms reduce the risk of sexually transmitted infections by up to 98%, keeping both partners safe.</p>
       </div>
       <div class="card">
-        <div class="icon">â¤ï¸</div>
+        <div class="icon">❤️</div>
         <h3>More Confidence</h3>
         <p>When you're protected, you're relaxed. Real pleasure comes from being fully present, not anxious.</p>
       </div>
       <div class="card">
-        <div class="icon">âœ¨</div>
+        <div class="icon">✨</div>
         <h3>Enhanced Pleasure</h3>
         <p>Ribbed and dotted textures like Durex Extra are designed to heighten sensation for both partners.</p>
       </div>
       <div class="card">
-        <div class="icon">ðŸ¤</div>
+        <div class="icon">🤝</div>
         <h3>Mutual Respect</h3>
-        <p>Choosing protection together builds deeper trust and intimacy â€” a true foundation of a healthy relationship.</p>
+        <p>Choosing protection together builds deeper trust and intimacy — a true foundation of a healthy relationship.</p>
       </div>
       <div class="card">
-        <div class="icon">ðŸŒ¿</div>
+        <div class="icon">🌿</div>
         <h3>Peace of Mind</h3>
         <p>No unexpected stress after intimacy. Enjoy the moment and the day after with total peace of mind.</p>
       </div>
       <div class="card">
-        <div class="icon">ðŸ’ª</div>
+        <div class="icon">💪</div>
         <h3>Sexual Wellness</h3>
         <p>A safe sex life is a healthy sex life. Regular protection is part of overall wellbeing and self-care.</p>
       </div>
     </div>
   </section>
 
-  <!-- â•â• CALLOUT + BOTTOM CTA â•â• -->
+  <!-- ══ CALLOUT + BOTTOM CTA ══ -->
   <section class="callout">
     <h3>Ready for Safe, Pleasurable Moments?</h3>
-    <p>
-      Browse our curated collection of premium condoms and intimate wellness products â€” discreetly packaged and delivered to you.
-    </p>
-    <a class="btn btn-outline" href="https://paystack.shop/pleasure-store">ðŸ›’ Shop Now</a>
+    <p>Browse our curated collection of premium condoms and intimate wellness products — discreetly packaged and delivered to you.</p>
+    <a class="btn btn-gold" href="https://paystack.shop/pleasure-store">Shop Now</a>
 
-    <div style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 14px;">
-      <a href="https://wa.me/2349150692422" class="btn" style="background:#25D366; color:#fff; box-shadow: 0 6px 24px rgba(37,211,102,0.4); display:flex; align-items:center; gap:10px;">
+    <div class="contact-btns">
+      <a href="https://wa.me/2349150692422" class="btn btn-whatsapp">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Chat on WhatsApp
       </a>
-      <a href="mailto:emmanuel@safedeal.com.ng" class="btn" style="background: rgba(255,255,255,0.15); color:#fff; border: 2px solid rgba(255,255,255,0.5); display:flex; align-items:center; gap:10px;">
+      <a href="mailto:emmanuel@safedeal.com.ng" class="btn btn-email">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
         emmanuel@safedeal.com.ng
       </a>
@@ -302,9 +315,11 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Pleasure Store &mdash; <a href="https://paystack.shop/pleasure-store">paystack.shop/pleasure-store</a></p>
-    <p style="margin-top:6px;">ðŸ“§ <a href="mailto:emmanuel@safedeal.com.ng">emmanuel@safedeal.com.ng</a> &nbsp;|&nbsp; ðŸ“± <a href="https://wa.me/2349150692422">09150692422</a></p>
+    <p>&copy; 2025 Pleasure Store</p>
+    <p><a href="mailto:emmanuel@safedeal.com.ng">emmanuel@safedeal.com.ng</a></p>
+    <p><a href="https://wa.me/2349150692422">09150692422</a></p>
   </footer>
 
 </body>
-</html>
+  </html>
+  
